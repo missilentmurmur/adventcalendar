@@ -1,12 +1,13 @@
 body {
-    background-color: #2B2D46;
+    background-color: #131320;
 }
 
 #main {
     margin: 40px;
     display: grid;
-    grid-template-rows: 60px 120px auto;
-    background-color: mediumseagreen;
+    grid-template-rows: 80px 120px auto;
+    grid-template-columns: 60% 20% 20%;
+
     width: 750px;
     height: 680px;
 
@@ -14,16 +15,43 @@ body {
 
 .general {
     width: auto;
+
+}
+
+@font-face {
+    font-family: "Alex Brush";
+    src: local(/home/andi/git/adventinaptar/adventcalendar/AlexBrush-Regular.ttf);
 }
 
 #banner {
     grid-row: 1;
-    background-color: #2B2D46;
+
+    font-size: 50px;
+    color: gold;
+    font-family: Purisa;
 }
 
 #instructions {
     grid-row: 2;
-    background-color: blue;
+    grid-column: span 3;
+    color: ghostwhite;
+    font-family: sans-serif;
+}
+
+#themeButton {
+    grid-row: 1;
+    grid-column: 2;
+    color: gold;
+    font-family: Purisa;
+    justify-self: end;
+}
+
+#contentButton {
+    grid-row: 1;
+    grid-column: 3;
+    color: gold;
+    font-family: Purisa;
+    justify-self: end;
 }
 
 .calendar {
@@ -38,8 +66,18 @@ body {
 
 .window {
     margin: 10px;
-    border-style: dashed;
-    color: red;
+    border: dashed darkgoldenrod 1px;
+    color: darkgoldenrod;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Purisa, sans-serif;
+    justify-items:end;
+}
+
+.window:hover {
+    background-color: ghostwhite;
+    color: darkred;
+    opacity: 0.5;
 }
 
 .row {
@@ -47,6 +85,8 @@ body {
 }
 
 .opened {
-    background-color: whitesmoke;
+    background-color: white;
     opacity: 50%;
+    color: #131320;
+    font-size: 15px;
 }

@@ -6,13 +6,7 @@ function putGiftsIn(giftlist) {
         console.log(giftlist[i]);
     }
 }*/
-class Box {
-    number = 0;
-    opened = false;
-    text = '';
 
-
-}
 
 var surprises = [
     'Jn 1, 1-15',
@@ -41,22 +35,35 @@ var surprises = [
     'Jn 1, 14'
 ];
 
-const createEmptyCalendar = (owner, width,height) => {
-    const field = [];
-    for(let i=1;i<width+1;i++){
-        field.push([]);
-        for(let j=1;j<height+1;j++){
-            field[i].push({
-                isRevealed: false,
-                upNext: false,
-                tempGift: j,
+class Window {
+    constructor(number, contentPiece) {
+        this.number = number;
+        this.content = contentPiece;
+        this.isRevealed = false;
+    };
+}
 
-                //beletenni az ajandekot
-            });
+class Calendar {
+    constructor(contentList) {
+        this.windowList = [];
+        for (let i=1; i<25; i++) {
+            let newWindow = new Window(i,contentList[i-1]);
+            this.windowList.push(newWindow);
         }
     }
-    return field;
-};
+
+    shuffle() {
+        for (var i = 24 - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = this.windowList[i];
+            this.windowList[i] = this.windowList[j];
+            this.windowList[j] = temp;
+        }
+    }
+    //ide kell egy load meg egy save method
+}
+
+
 
 
 //fuggveny, ami berandomizalja az ablakok szamozasat

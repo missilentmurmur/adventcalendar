@@ -1,3 +1,5 @@
+//import Calendar from "./generateCalendar";
+
 /*
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -56,26 +58,29 @@ const start = () => {
     var day = d.getDate();
 
     //field = initGame(size, bombCount);
-    clickable = true;
+    let clickable = true;
 
+    const naptar = new Calendar(surprises);
+    naptar.shuffle();
+    const ablak = naptar.windowList[1];
+    console.log(ablak);
 
-    visualTable = document.getElementById('calendar');
+    const visualTable = document.getElementById('calendar');
 /*    while (visualTable.firstChild) {
         visualTable.removeChild(visualTable.firstChild);
     }*/
 
-    visualField = [];
-    for(let i=0;i<4;i++) {
-        visualField.push([]);
+    for (let i=0;i<4;i++) {
+
         for(let j=0;j<6;j++) {
             const elem = document.createElement('div');
-            visualField[i][j] = elem;
             visualTable.append(elem);
             console.log('check');
 
             elem.classList.add('window');
-            let number = i * 6 + j + 1;
-            elem.innerText = number;
+            let number = i * 6 + j;
+            let w = naptar.windowList[number];
+            elem.innerText = w.number;
             elem.dataset.x = i;
             elem.dataset.y = j;
 
@@ -92,7 +97,6 @@ const start = () => {
 
                 //const { x, y } = getEventTargetCoords(event);
 
-                //reveal(field, x, y, render, endGame);
             });
 
             /*elem.addEventListener('contextmenu', (event) => {
