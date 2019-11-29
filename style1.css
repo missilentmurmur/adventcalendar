@@ -5,9 +5,8 @@ body {
 #main {
     margin: 40px;
     display: grid;
-    grid-template-rows: 80px 120px auto;
-    grid-template-columns: 60% 20% 20%;
-
+    grid-template-rows: 90px 140px auto;
+    grid-template-columns: 60% 1fr 1fr 1fr;
     width: 750px;
     height: 680px;
 
@@ -15,43 +14,46 @@ body {
 
 .general {
     width: auto;
-
-}
-
-@font-face {
-    font-family: "Alex Brush";
-    src: local(/home/andi/git/adventinaptar/adventcalendar/AlexBrush-Regular.ttf);
+    font-family: Purisa;
+    background-color: #131320;
 }
 
 #banner {
     grid-row: 1;
-
+    height: 90px;
     font-size: 50px;
     color: gold;
     font-family: Purisa;
+    align-self: end;
 }
 
 #instructions {
     grid-row: 2;
-    grid-column: span 3;
+    grid-column: span 4;
     color: ghostwhite;
-    font-family: sans-serif;
+    font-family: Purisa, sans-serif;
+    font-size: 15px;
 }
 
 #themeButton {
-    grid-row: 1;
-    grid-column: 2;
-    color: gold;
-    font-family: Purisa;
-    justify-self: end;
-}
-
-#contentButton {
     grid-row: 1;
     grid-column: 3;
     color: gold;
     font-family: Purisa;
     justify-self: end;
+
+}
+
+#contentButton {
+    grid-row: 1;
+    grid-column: 4;
+    color: gold;
+    font-family: Purisa;
+    justify-self: end;
+}
+
+iframe {
+    padding: 200px;
 }
 
 .calendar {
@@ -90,3 +92,34 @@ body {
     color: #131320;
     font-size: 15px;
 }
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+/*
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content a:hover {background-color: #ddd;}*/

@@ -1,28 +1,34 @@
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+
+const reveal = (e,w) => {
+    e.classList.add('opened');
+    e.innerText = w.number + '  ' + w.text;
+    //e.innerText = videos[0][0];
+    document.getElementById("overlay").innerHTML = w.content;
+    w.isRevealed = true;
+};
+
+
 const start = () => {
-    //const size = 9;
-    //const bombCount = 10;
     let d = new Date();
     var day = d.getDate();
 
-    //field = initGame(size, bombCount);
-    let clickable = true;
-
-    const naptar = new Calendar(surprises);
-    naptar.shuffle();
-    const ablak = naptar.windowList[1];
-    console.log(ablak);
+    const naptar = new Calendar(videos);
+    let doboz = document.getElementById('instructions');
 
     const visualTable = document.getElementById('calendar');
-/*    while (visualTable.firstChild) {
-        visualTable.removeChild(visualTable.firstChild);
-    }*/
 
     for (let i=0;i<4;i++) {
 
         for(let j=0;j<6;j++) {
             const elem = document.createElement('div');
             visualTable.append(elem);
-            console.log('check');
 
             elem.classList.add('window');
             let number = i * 6 + j;
@@ -31,13 +37,14 @@ const start = () => {
             elem.dataset.x = i;
             elem.dataset.y = j;
 
+            if (w.isRevealed) {reveal(elem,w)}
+
             elem.addEventListener('click', (event) => {
                 w.isRevealed = w.number <= day;
                 if(!w.isRevealed) return;
-                elem.classList.add('opened');
-
-                elem.innerText = w.content;
-
+                on();
+                reveal(elem,w);
+                naptar.save();
             });
 
         }

@@ -8,6 +8,7 @@
     <title>Adventi naptar</title>
 </head>
 <body>
+<div id="overlay" onclick="off()"></div>
 <div id="main">
     <div class="general" id="banner">Adventi naptár</div>
     <div class="general" id="instructions">
@@ -17,8 +18,17 @@
         Idén egy ajándékötletből kibontva szeretnék ismerőst és ismeretlent meglepni ezzel a digitális naptárral.
         Mindenkinek izgatott nyitogatást kívánok!
     </div>
-    <div class="general" id="themeButton">Stílus</div>
-    <div class="general" id="contentButton">Tartalom</div>
+    <div class="dropdown">
+        <div class="general" id="themeButton">Stílus</div>
+    </div>
+    <div class="custom-select">
+        <select id="content">
+            <option value="Tartalom">Tartalom</option>
+            <option value="pictures" onclick="">Képek</option>
+            <option value="verses" onclick="">Igék</option>
+            <option value="videos" onclick="">Zenék</option>
+        </select>
+    </div>
     <div id="calendar" class="calendar"></div>
 </div>
 
