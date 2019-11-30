@@ -8,9 +8,10 @@ function off() {
 
 const reveal = (e,w) => {
     e.classList.add('opened');
-    e.innerText = w.number + '  ' + w.text;
+    e.innerText = w.number + '.  ' + w.text;
     //e.innerText = videos[0][0];
-    document.getElementById("overlay").innerHTML = w.content;
+    //document.getElementById("overlay").innerHTML = w.content;
+    
     w.isRevealed = true;
 };
 
@@ -42,7 +43,8 @@ const start = () => {
             elem.addEventListener('click', (event) => {
                 w.isRevealed = w.number <= day;
                 if(!w.isRevealed) return;
-                on();
+                window.open(w.content);
+                //on();
                 reveal(elem,w);
                 naptar.save();
             });

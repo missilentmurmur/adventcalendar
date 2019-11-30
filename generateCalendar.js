@@ -1,5 +1,5 @@
 var verses = [
-    ['Jn 1, 1-15', '<p>http://biblia.hit.hu/bible/21/JHN/1</p>'],
+    ['Jn 1, 1-15', 'https://www.youtube.com/watch?v=J_vksADGeOI'],
     ['Ezs 9, 2-7', ''],
     ['Ezs 11, 1-10', ''],
     ['Jer 33, 14-16', ''],
@@ -26,30 +26,37 @@ var verses = [
 ];
 
 const videos = [
-    ['Wham: Last Christmas','<iframe width="560" height="315" src="https://www.youtube.com/embed/E8gmARGvPlI" frameborder="100" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'],
-    ['Jingle Bells', '<iframe width="560" height="315" src="https://www.youtube.com/embed/eZrjtdRkwDA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'],
-    ['The Twelve Days of Christmas', '<iframe width="560" height="315" src="https://www.youtube.com/embed/LEpCZkdtf1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'],
-    ['4.', ''],
-    ['5.', ''],
-    ['6.', ''],
-    ['7.', ''],
-    ['8.', ''],
-    ['9.', ''],
-    ['10.', ''],
-    ['11.', ''],
-    ['12.', ''],
-    ['13.', ''],
-    ['', ''],
-    ['', ''],
-    ['', ''],
-    ['', ''],
-    ['', ''],
-    ['', ''],
-    ['', ''],
-    ['', ''],
-    ['', ''],
-    ['', ''],
-    ['', '<iframe width="560" height="315" src="https://www.youtube.com/embed/ollqlWr1z8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'],
+    /*vasarnap*/
+    ['The McCallans: Highland Christmas', 'https://www.youtube.com/watch?v=J_vksADGeOI'],
+    ['Wham: Last Christmas','https://www.youtube.com/watch?v=E8gmARGvPlI'],
+    ['Jingle Bells', 'https://www.youtube.com/watch?v=DpjbPzL1GdI'],
+    ['Low: Just Like Christmas', 'https://www.youtube.com/watch?v=IippcraBPKA'],
+    ['Mariah Carey: All I Want For Christmas Is You', 'https://www.youtube.com/watch?v=yXQViqx6GMY'],
+    ['Bojtorján: Száncsengő', 'https://www.youtube.com/watch?v=wrvGJMPC2AI'],
+    /*szombat*/
+    ['Instrumental Christmas Music', 'https://www.youtube.com/watch?v=ncjuqj0WN6s'],
+    /*vasarnap*/
+    ['Winter Night Jazz Music', 'https://www.youtube.com/watch?v=S-gxNYXogKU'],
+    ['Fleet Foxes: White Winter Hymnal', 'https://www.youtube.com/watch?v=DrQRS40OKNE'],
+    ['Gryllus Vilmos: Karácsonyi dalok', 'https://www.youtube.com/watch?v=tuAPEULek2k'],
+    ['Rick Astley: Never Gonna Give You Up', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'],
+    ['Lindsey Stirling: Carol of the Bells', 'https://www.youtube.com/watch?v=EKkzbbLYPuI'],
+    ['Happy ver. Christmas Jazz instrumental', 'https://www.youtube.com/watch?v=mmJ-KiSIsD4'],
+    /*szombat*/
+    ['The Twelve Days of Christmas', 'https://www.youtube.com/watch?v=LEpCZkdtf1M'],
+    /*vasarnap*/
+    ['Indie/Indie-Folk Compilation', 'https://www.youtube.com/watch?v=Sf5FfA1j590'],
+    ['Atlantic Five Jazz Band: Christmas Moods', 'https://www.youtube.com/watch?v=KQ-7O3fhAuQ'],
+    ['Bad Religion: Hark! The Herald Angels Sing', 'https://www.youtube.com/watch?v=EJizJvrmnGI'],
+    ['O come, O come, Emmanuel', 'https://www.youtube.com/watch?v=iO7ySn-Swwc'],
+    ['Celtic Christmas 3: The South Wind', 'https://www.youtube.com/watch?v=YX488q0mTwI'],
+    ['What Child is This, Greensleeves', 'https://www.youtube.com/watch?v=qPRFk8sLIPw'],
+    /*szombat*/
+    ['Silent Night - Csendes éj', 'https://www.youtube.com/watch?v=jTbskYrEYpw'],
+    /*vasarnap*/
+    ['2 Hours of Classic Christmas Music', 'https://www.youtube.com/watch?v=8SST4sYY07M'],
+    ['Chris Rea: Driving Home For Christmas', 'https://www.youtube.com/watch?v=DDt3u2Ev1cI'],
+    ['Christmas Jazz', 'https://www.youtube.com/watch?v=ollqlWr1z8U'],
 ];
 
 class Window {
