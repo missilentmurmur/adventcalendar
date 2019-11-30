@@ -6,6 +6,8 @@ function off() {
     document.getElementById("overlay").style.display = "none";
 }
 
+
+
 const reveal = (e,w) => {
     e.classList.add('opened');
     e.innerText = w.number + '.  ' + w.text;
@@ -20,7 +22,7 @@ const start = () => {
     let d = new Date();
     var day = d.getDate();
 
-    const naptar = new Calendar(videos);
+    const naptar = new Calendar(verses);
     let doboz = document.getElementById('instructions');
 
     const visualTable = document.getElementById('calendar');
@@ -34,6 +36,7 @@ const start = () => {
             elem.classList.add('window');
             let number = i * 6 + j;
             let w = naptar.windowList[number];
+            const openIt = () => {window.open(w.content);};
             elem.innerText = w.number;
             elem.dataset.x = i;
             elem.dataset.y = j;
@@ -43,7 +46,8 @@ const start = () => {
             elem.addEventListener('click', (event) => {
                 w.isRevealed = w.number <= day;
                 if(!w.isRevealed) return;
-                window.open(w.content);
+                //window.open(w.content);
+                setTimeout(openIt, 2000);
                 //on();
                 reveal(elem,w);
                 naptar.save();
