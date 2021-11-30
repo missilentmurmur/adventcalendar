@@ -25,9 +25,43 @@ var verses = [
     ['Jn 1, 14', 'https://szentiras.hu/UF/Jn1'],
 ];
 
+const bible_videos = [
+    /*vasarnap*/
+    ['A szeretett fiú – Jézus bemerítése', 'https://www.youtube.com/watch?v=H5uSSCtVod0'],
+    ['Kísértés a pusztában','https://www.youtube.com/watch?v=oxMuBOTEyXg'],
+    ['A király és országa', 'https://www.youtube.com/watch?v=feySljfPxuI'],
+    ['A tetőn át', 'https://www.youtube.com/watch?v=mLaQVUIOT4I'],
+    ['Ideje felkelni', 'https://www.youtube.com/watch?v=AyRwx2oPEvM'],
+    ['A nagy vendéglátás', 'https://www.youtube.com/watch?v=1RNCsHwuS8w'],
+    /*szombat*/
+    ['Démonok', 'https://www.youtube.com/watch?v=SAEl5JHMA94'],
+    /*vasarnap*/
+    ['A hazatérés', 'https://www.youtube.com/watch?v=MBgPeU7O8Ig'],
+    ['A szamár és a király', 'https://www.youtube.com/watch?v=fOV2ST_CZsQ'],
+    ['A búcsúvacsora', 'https://www.youtube.com/watch?v=hglnnPuaE-k'],
+    ['A kertben – Jézust elfogják', 'https://www.youtube.com/watch?v=KA8o-zGXw-s'],
+    ['Jézust keresztre feszítik', 'https://www.youtube.com/watch?v=ip0gTwZOobw&t=21s'],
+    ['Vidám vasárnap – Az üres sír', 'https://www.youtube.com/watch?v=QiG1RnpFUWc'],
+    /*szombat*/
+    ['A felhők fölé – Jézus a mennybe megy', 'https://www.youtube.com/watch?v=yyJyDIV0ZyM'],
+    /*vasarnap*/
+    ['Isten csodálatos ajándéka – A Szentlélek', 'https://www.youtube.com/watch?v=sFfDMNXQCo4'],
+    ['Aranyam és ezüstöm. Péter meggyógyítja a sántát', 'https://www.youtube.com/watch?v=Ynvy2mN6fGM'],
+    ['Pál találkozik Jézussal. Ellenségből barát', 'https://www.youtube.com/watch?v=GiC1UXTY0Fw'],
+    ['Mindenki jöhet! Péter látomása', 'https://www.youtube.com/watch?v=3sUp1OZsn64'],
+    ['Utazások', 'https://www.youtube.com/watch?v=PyfrDxatPFo'],
+    ['Új Jeruzsálem', 'https://www.youtube.com/watch?v=ctxCc5Nd200'],
+    /*szombat*/
+    ['Egy gyermek ima', 'https://www.youtube.com/watch?v=hdrK-d2yLVs'],
+    /*vasarnap*/
+    ['Ima a Szentlélek ajándékaiért', 'https://www.youtube.com/watch?v=6SPqpVgcQ00'],
+    ['Jézus Szíve ima', 'https://www.youtube.com/watch?v=ETVsUFERxj0'],
+    ['Hiszek egy Istenben', 'https://www.youtube.com/watch?v=l6fssKG7U6k'],
+];
+
 const videos = [
     /*vasarnap*/
-    ['The McCallans: Highland Christmas', 'https://www.youtube.com/watch?v=J_vksADGeOI'],
+    ['The Pogues: Fairytale Of New York', 'https://www.youtube.com/watch?v=j9jbdgZidu8'],
     ['Wham: Last Christmas','https://www.youtube.com/watch?v=E8gmARGvPlI'],
     ['Jingle Bells', 'https://www.youtube.com/watch?v=DpjbPzL1GdI'],
     ['Low: Just Like Christmas', 'https://www.youtube.com/watch?v=IippcraBPKA'],
@@ -38,7 +72,7 @@ const videos = [
     /*vasarnap*/
     ['Winter Night Jazz Music', 'https://www.youtube.com/watch?v=S-gxNYXogKU'],
     ['Fleet Foxes: White Winter Hymnal', 'https://www.youtube.com/watch?v=DrQRS40OKNE'],
-    ['Gryllus Vilmos: Karácsonyi dalok', 'https://www.youtube.com/watch?v=tuAPEULek2k'],
+    ['Gryllus Vilmos: Szálljatok le...', 'https://www.youtube.com/watch?v=bULGPs7kDSI'],
     ['Rick Astley: Never Gonna Give You Up', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'],
     ['Lindsey Stirling: Carol of the Bells', 'https://www.youtube.com/watch?v=EKkzbbLYPuI'],
     ['Happy ver. Christmas Jazz instrumental', 'https://www.youtube.com/watch?v=mmJ-KiSIsD4'],
@@ -54,10 +88,11 @@ const videos = [
     /*szombat*/
     ['Silent Night - Csendes éj', 'https://www.youtube.com/watch?v=jTbskYrEYpw'],
     /*vasarnap*/
-    ['2 Hours of Classic Christmas Music', 'https://www.youtube.com/watch?v=8SST4sYY07M'],
+    ['Cozy Christmas Beats', 'https://www.youtube.com/watch?v=dpgO44UQuRc'],
     ['Chris Rea: Driving Home For Christmas', 'https://www.youtube.com/watch?v=DDt3u2Ev1cI'],
     ['Christmas Jazz', 'https://www.youtube.com/watch?v=ollqlWr1z8U'],
 ];
+
 
 class Window {
     constructor(number, contentText, contentPiece) {

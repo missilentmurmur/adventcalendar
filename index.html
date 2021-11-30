@@ -14,21 +14,18 @@
     <div class="general" id="banner">Adventi naptár</div>
     <div class="general" id="instructions">
         Kedves Látogató!<br>
-        Az advent a várakozás, a felkészülés ideje. A mai napig nagyon élvezem azt a keretet,
-        amit az adventi naptár tud adni ennek az időszaknak, az ismétlődés és a meglepetés ötvözésével.
-        Idén egy ajándékötletből kibontva szeretnék ismerőst és ismeretlent meglepni ezzel a digitális naptárral.
+        Az advent a várakozás, a felkészülés ideje. 
         Mindenkinek izgatott nyitogatást kívánok!
     </div>
     <div class="dropdown">
         <div class="general" id="themeButton">Stílus</div>
     </div>
-    <div class="custom-select">
-        <select id="content">
-            <option value="Tartalom">Tartalom</option>
-            <option value="pictures" onclick="">Képek</option>
-            <option value="verses" onclick="">Igék</option>
-            <option value="videos" onclick="">Zenék</option>
-        </select>
+    <div class="dropdown">
+        <button onclick="openDropdown('content')", class="dropbtn">Tartalom</button>
+        <div id="content" class="dropdown-content">
+            <button id="verses" onclick="clickedThis(this.id)">Igék</button>
+            <button id="videos" onclick="clickedThis()">Zenék</button>
+        </div>
     </div>
     <div id="calendar" class="calendar"></div>
 </div>
