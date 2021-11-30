@@ -22,7 +22,7 @@ const start = () => {
     let d = new Date();
     var day = d.getDate();
 
-    const naptar = new Calendar(verses);
+    const naptar = new Calendar(videos);
     let doboz = document.getElementById('instructions');
 
     const visualTable = document.getElementById('calendar');
